@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Here you declare a root element, set tag.
+Its ordering attribute can be either together or sequential.
+It’s together by default, but you may prefer to specify it for clarity.
+The set tag has two child XML tags, each of which is an objectAnimator.
+-->
+
+<!--
+You can’t specify your target object here, but you can do it later in Kotlin.
+-->
 <set xmlns:android="http://schemas.android.com/apk/res/android"
-     android:ordering="together">
+    android:ordering="together">
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:duration="1000"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:interpolator="@android:interpolator/linear"
+        android:valueFrom="1.0"
+        android:valueTo="0.0"
+        android:valueType="floatType"/>
+
+    <objectAnimator
+        android:propertyName="translationY"
+        android:duration="1000"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:interpolator="@android:interpolator/bounce"
+        android:valueFrom="0"
+        android:valueTo="-500"
+        android:valueType="floatType"/>
 </set>

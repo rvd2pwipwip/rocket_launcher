@@ -1,5 +1,6 @@
 package com.raywenderlich.rocketlauncher.animationactivities
 
+import android.animation.TimeInterpolator
 import android.animation.ValueAnimator
 import android.view.animation.LinearInterpolator
 
@@ -14,7 +15,7 @@ class RotateRocketAnimationActivity : BaseAnimationActivity() {
       rocket.rotation = value
     }
 
-    valueAnimator.interpolator = LinearInterpolator()
+    valueAnimator.interpolator = LinearInterpolator() as TimeInterpolator?
     valueAnimator.duration = DEFAULT_ANIMATION_DURATION
     valueAnimator.start()
 
