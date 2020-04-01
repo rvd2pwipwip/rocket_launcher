@@ -7,6 +7,8 @@ class LaunchRocketValueAnimatorAnimationActivity : BaseAnimationActivity() {
   override fun onStartAnimation() {
 
     //1 Create an instance of ValueAnimator by calling the static method ofFloat
+    //  and give it the starting and ending values for the property that you want to animate,
+    //  along with the duration of the animation (default = 300ms)
     val valueAnimator = ValueAnimator.ofFloat(0f, -screenHeight)
 
     //2 Call addUpdateListener() and pass in a listener

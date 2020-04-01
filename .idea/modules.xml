@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rocket_launcher.iml" filepath="$PROJECT_DIR$/rocket_launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="rocket_launcher/app" />
+      <module fileurl="file://$PROJECT_DIR$/rocket_launcher.iml" filepath="$PROJECT_DIR$/rocket_launcher.iml" group="rocket_launcher" />
     </modules>
   </component>
 </project>
